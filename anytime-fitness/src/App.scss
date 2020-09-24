@@ -1,0 +1,130 @@
+$mobile: 500px; //Mobile Screen Size
+$orange: #ff9233;
+$black: #000;
+$white: #fff;
+
+@import "CreateClass";
+@import "Reset";
+@import "Classes";
+@import "DetailedClassCard";
+
+body {
+  font-size: 62.5%;
+}
+
+//Sign Up & Login Page Styling
+.signUpContainer {
+  display: flex;
+
+  .signUpImage {
+    width: 40%;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+  .signUpFormContainer {
+    padding-top: 2.5rem !important;
+    width: 40%;
+    padding-left: 2.5rem !important;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      padding-top: 40px !important;
+      padding-left: 0px !important;
+    }
+  }
+
+  .signUpForm {
+    width: 70% !important;
+
+    @media (max-width: $mobile) {
+      width: 90%;
+      margin: 0px auto 20px auto;
+    }
+  }
+}
+
+// Navigation Styling - Site
+nav {
+  .navSite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 0px 30px 25px 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    a {
+      color: $black;
+      margin-left: 40px;
+
+      @media (max-width: $mobile) {
+        margin: 0px 20px;
+      }
+    }
+    a:hover {
+      text-decoration: none;
+      color: $orange;
+      cursor: pointer;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  //Lower Navbar User
+  .navLinksUser {
+    background-color: $orange;
+    padding: 10px 30px;
+
+    a {
+      color: $black;
+      margin-right: 60px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $white;
+    }
+
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      a {
+        margin: 5px 0px;
+      }
+    }
+  }
+}
+
+//Lower Navbar Instructor
+.navLinksInstructor {
+  background-color: $orange;
+  padding: 10px 30px;
+
+  a {
+    color: $black;
+    margin-right: 60px;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $white;
+  }
+
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    a {
+      margin: 5px 0px;
+    }
+  }
+}
