@@ -1,0 +1,55 @@
+.createContainer {
+  width: 30%;
+  margin: 0px auto;
+
+  @media (max-width: $mobile) {
+    width: 80%;
+  }
+
+  h3 {
+    margin-top: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0px;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+    }
+
+    textarea {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+    }
+
+    select {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+    }
+
+    button {
+      color: $white;
+      background-color: #6c757d;
+      padding: 10px;
+      border-radius: 0.25rem;
+      border: none;
+      margin-top: 10px;
+      margin-bottom: 30px;
+
+      &:hover {
+        background-color: #5a6268;
+      }
+    }
+  }
+}
