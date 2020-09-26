@@ -6,7 +6,7 @@ import axios from "axios";
 
 const formSchema = yup.object().shape({
   name: yup.string().required("Name must be at least 2 characters").min(2),
-  email: yup.string(),
+  email: yup.string().required(),
 });
 
 export default function SignUpForm() {
@@ -68,7 +68,7 @@ export default function SignUpForm() {
   return (
     <div>
       <div>
-        <h3>Register your account, here:</h3>
+        <h1 className="font-weight-bold mb-5">Create an account</h1>
 
         {/* FORM BEGINS HERE  */}
 
